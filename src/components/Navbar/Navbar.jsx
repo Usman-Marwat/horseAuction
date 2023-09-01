@@ -24,12 +24,7 @@ function Navbar() {
 				<ul className="menu">
 					<li className="listItem" onClick={removeNavbar}>
 						<a href="/" className="link">
-							Used Horses
-						</a>
-					</li>
-					<li className="listItem" onClick={removeNavbar}>
-						<a href="/" className="link">
-							New Horses
+							Racing
 						</a>
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
@@ -39,7 +34,12 @@ function Navbar() {
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
 						<a href="/" className="link">
-							Sell
+							Merchant
+						</a>
+					</li>
+					<li className="listItem" onClick={removeNavbar}>
+						<a href="/" className="link">
+							GSB
 						</a>
 					</li>
 				</ul>

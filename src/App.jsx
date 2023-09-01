@@ -9,6 +9,7 @@ import Review from './components/Review/Review';
 import Search from './components/Search/Search';
 import Sellers from './components/Sellers/Sellers';
 import Trending from './components/Trending/Trending';
+import Questions from './components/Questions/Questions';
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 			<Auction />
 			<Review />
 			<Footer /> */}
+			<Questions />
 		</div>
 	);
 }
