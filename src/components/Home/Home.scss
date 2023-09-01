@@ -1,0 +1,65 @@
+:root {
+	--primaryColor: #7a63f1;
+	--secondaryColor: #ebe8fc;
+	--textColor: #a3a3a3;
+	--greyColor: #f4f4f4;
+	--whiteColor: #f5f4fa;
+	--blackColor: #434344;
+}
+
+.home {
+	padding-top: 8rem;
+}
+
+.secContainer {
+	padding: 0 1.5rem;
+	text-align: center;
+	display: grid;
+	gap: 2rem;
+	.homeText {
+		.homeSpan {
+			color: var(--textColor);
+			font-weight: 400;
+			font-size: 15px;
+		}
+
+		.homeTitle {
+			color: var(--blackColor);
+			font-weight: 700;
+			font-size: 30px;
+		}
+
+		.btns {
+			gap: 1.5rem;
+			justify-content: center;
+			.btn {
+				padding: 10px 15px;
+				border-radius: 3px;
+				font-weight: 600;
+				margin-top: 0.5rem;
+				font-size: 12px;
+				&:hover {
+					background: var(--primaryColor);
+					color: var(--whiteColor);
+				}
+			}
+			.btn:nth-child(1) {
+				background: var(--whiteColor);
+				color: var(--textColor);
+				&:hover {
+					background: var(--primaryColor);
+					color: var(--whiteColor);
+				}
+			}
+			.btn:nth-child(2) {
+				&:hover {
+					background: var(--whiteColor);
+					color: var(--textColor);
+				}
+			}
+		}
+	}
+	.homeImage {
+		margin: auto;
+	}
+}

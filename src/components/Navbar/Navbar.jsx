@@ -8,10 +8,10 @@ import logo from '../../assets/logo.jpg';
 import './Navbar.css';
 
 function Navbar() {
-	const [navbar, setNavbar] = useState('menu');
+	const [navbar, setNavbar] = useState('navbar');
 
-	const showNavbar = () => setNavbar('menu showNavbar');
-	const removeNavbar = () => setNavbar('menu');
+	const showNavbar = () => setNavbar('navbar showNavbar');
+	const removeNavbar = () => setNavbar('navbar');
 
 	return (
 		<div className="header">
@@ -20,24 +20,24 @@ function Navbar() {
 				<span>Hor auction</span>
 			</div>
 
-			<div className="navBar">
+			<div className={navbar}>
 				<ul className="menu">
-					<li className="listItem">
+					<li className="listItem" onClick={removeNavbar}>
 						<a href="/" className="link">
 							Used Horses
 						</a>
 					</li>
-					<li className="listItem">
+					<li className="listItem" onClick={removeNavbar}>
 						<a href="/" className="link">
 							New Horses
 						</a>
 					</li>
-					<li className="listItem">
+					<li className="listItem" onClick={removeNavbar}>
 						<a href="/" className="link">
 							Auctions
 						</a>
 					</li>
-					<li className="listItem">
+					<li className="listItem" onClick={removeNavbar}>
 						<a href="/" className="link">
 							Sell
 						</a>
