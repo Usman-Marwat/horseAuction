@@ -101,4 +101,64 @@
 .addBg {
   background: var(--whiteColor);
   box-shadow: none;
+}
+
+@media screen and (min-width: 520px) {
+  .header .logoDiv .logo {
+    width: 100px;
+  }
+  .header .signUp .text {
+    padding: 6px;
+    font-size: 16px;
+  }
+  .header .signUp .toggleNavbarIcon {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .header .navbar .closeIcon {
+    display: none;
+  }
+  .header .navbar .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .navbar .menu .listItem {
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+  }
+  .header .navbar .menu .listItem a {
+    color: var(--textColor);
+    font-size: 15px;
+  }
+  .header .navbar .menu .listItem:hover {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+    transition: 0.3s ease;
+  }
+  .header .navbar .menu .listItem:hover a {
+    color: var(--whiteColor);
+  }
+  .header .signUp .text {
+    padding: 6px 10px;
+  }
+  .header .signUp .toggleNavbarIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1064px) {
+  .header {
+    padding: 2rem 7rem;
+  }
+  .header .navbar .menu .listItem a {
+    font-size: 17px;
+  }
+  .header .signUp .text {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header .navbar .menu .listItem {
+    margin: 0 0.8rem;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
