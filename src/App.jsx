@@ -16,10 +16,9 @@ function App() {
 		<div>
 			<Navbar />
 			<Home />
-			{/* <Search />
+			{/* <Search /> */}
 			<Trending />
-			<Trending />
-			<Sellers />
+			{/* <Sellers />
 			<Auction />
 			<Review />
 			<Footer /> */}

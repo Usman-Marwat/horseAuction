@@ -96,4 +96,9 @@
 .header .showNavbar {
   top: 7rem;
   transition: 0.5s ease;
+}
+
+.addBg {
+  background: var(--whiteColor);
+  box-shadow: none;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -9,12 +9,18 @@ import './Navbar.css';
 
 function Navbar() {
 	const [navbar, setNavbar] = useState('navbar');
+	const [header, setHeader] = useState('header');
 
 	const showNavbar = () => setNavbar('navbar showNavbar');
 	const removeNavbar = () => setNavbar('navbar');
 
+	const addBg = () => {
+		if (window.screenY >= 20) setHeader('header addBg');
+	};
+	window.addEventListener('scroll', addBg);
+
 	return (
-		<div className="header">
+		<div className={header}>
 			<div className="logoDiv flex">
 				<img src={logo} alt="logo img" className="logo" />
 				<span>Hor auction</span>
