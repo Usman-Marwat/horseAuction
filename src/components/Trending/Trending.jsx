@@ -62,7 +62,7 @@ const horses = [
 		image: horse6,
 	},
 	{
-		name: 'Thoroughbred',
+		name: 'Thoroughbreds',
 		speed: '40-45mph',
 		description:
 			'Renowned for their speed and agility, often used in horse racing due to their exceptional athleticism.',
@@ -70,7 +70,7 @@ const horses = [
 		image: horse7,
 	},
 	{
-		name: 'Clydesdale',
+		name: 'Clydesdalex',
 		speed: '20-25mph',
 		description:
 			'Large draft horses known for their strength and gentle temperament',
@@ -78,7 +78,7 @@ const horses = [
 		image: horse8,
 	},
 	{
-		name: 'Andalusian',
+		name: 'Andalusianx',
 		speed: '20-30mph',
 		description:
 			'Andalusians are known for their elegance and are often seen in classical dressage',
@@ -100,7 +100,7 @@ function Trending() {
 				</div>
 
 				{horses.map((horse) => (
-					<div className="carContainer grid">
+					<div key={horse.name} className="carContainer grid">
 						<div className="singleCar grid">
 							<div className="imgDiv">
 								<img src={horse.image} alt="Horse Image" />

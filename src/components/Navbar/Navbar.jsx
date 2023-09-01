@@ -23,7 +23,7 @@ function Navbar() {
 		<div className={header}>
 			<div className="logoDiv flex">
 				<img src={logo} alt="logo img" className="logo" />
-				<span>Hor auction</span>
+				<span>Horse Auction</span>
 			</div>
 
 			<div className={navbar}>

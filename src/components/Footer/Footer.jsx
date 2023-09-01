@@ -14,7 +14,7 @@ function Footer() {
 				<div className="logoDiv">
 					<div className="footerLogo">
 						<GiHorseHead className="icon" />
-						<span>Hor auction</span>
+						<span>Horse Auction</span>
 					</div>
 					<div className="socials flex">
 						<ImFacebook className="icon" />
