@@ -8,7 +8,7 @@ function Home() {
 		<div className="home">
 			<div className="secContainer">
 				<div className="homeText flex">
-					<span className="homeSpan">Meet The Horse Up For Bidding</span>
+					<span className="homeSpan">Meet The Horse Up For Bidding Now!</span>
 					<h1 className="homeTitle">Arabian Horse</h1>
 					<div className="btns flex">
 						<button className="btn">More Details</button>

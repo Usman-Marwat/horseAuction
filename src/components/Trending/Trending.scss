@@ -12,6 +12,7 @@
 		.secHeading {
 			justify-content: center;
 			padding: 1rem 0;
+			gap: 1rem;
 
 			.navBtns {
 				gap: 0.5rem;
@@ -83,6 +84,77 @@
 					transform: translate(-7px);
 					.imgDiv {
 						border: 2px solid var(--primaryColor);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.trending {
+		.secContainer {
+			.secHeading {
+				gap: 3rem;
+				margin-bottom: 1rem;
+				.secTitle {
+					font-size: 23px;
+				}
+				.navBtns {
+					gap: 0.5rem;
+					.icon {
+						font-size: 40px;
+					}
+				}
+			}
+			.carContainer {
+				grid-template-columns: repeat(2, 1fr);
+
+				.singleCar {
+					.carTitle {
+						font-size: 18px;
+					}
+					.miles,
+					.AWD {
+						font-size: 16px;
+					}
+					.price_seller {
+						span {
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 940px) {
+	.trending {
+		.secContainer {
+			.secHeading {
+				.secTitle {
+					font-size: 28px;
+				}
+				.navBtns {
+					gap: 1rem;
+				}
+			}
+			.carContainer {
+				grid-template-columns: repeat(3, 1fr);
+
+				.singleCar {
+					.carTitle {
+						font-size: 20px;
+					}
+					.miles,
+					.AWD {
+						font-size: 15px;
+					}
+					.price_seller {
+						span {
+							font-weight: 600;
+						}
 					}
 				}
 			}

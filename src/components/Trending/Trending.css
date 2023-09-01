@@ -10,6 +10,7 @@
 .trending .secContainer .secHeading {
   justify-content: center;
   padding: 1rem 0;
+  gap: 1rem;
 }
 .trending .secContainer .secHeading .navBtns {
   gap: 0.5rem;
@@ -81,4 +82,54 @@
 }
 .trending .secContainer .carContainer .singleCar:hover .imgDiv {
   border: 2px solid var(--primaryColor);
+}
+
+@media screen and (min-width: 520px) {
+  .trending .secContainer .secHeading {
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+  .trending .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .trending .secContainer .secHeading .navBtns {
+    gap: 0.5rem;
+  }
+  .trending .secContainer .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .trending .secContainer .carContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trending .secContainer .carContainer .singleCar .carTitle {
+    font-size: 18px;
+  }
+  .trending .secContainer .carContainer .singleCar .miles,
+  .trending .secContainer .carContainer .singleCar .AWD {
+    font-size: 16px;
+  }
+  .trending .secContainer .carContainer .singleCar .price_seller span {
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 940px) {
+  .trending .secContainer .secHeading .secTitle {
+    font-size: 28px;
+  }
+  .trending .secContainer .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .trending .secContainer .carContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .trending .secContainer .carContainer .singleCar .carTitle {
+    font-size: 20px;
+  }
+  .trending .secContainer .carContainer .singleCar .miles,
+  .trending .secContainer .carContainer .singleCar .AWD {
+    font-size: 15px;
+  }
+  .trending .secContainer .carContainer .singleCar .price_seller span {
+    font-weight: 600;
+  }
 }/*# sourceMappingURL=Trending.css.map */

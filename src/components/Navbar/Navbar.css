@@ -148,7 +148,7 @@
 }
 @media screen and (min-width: 1064px) {
   .header {
-    padding: 2rem 7rem;
+    padding: 0.3rem 7rem;
   }
   .header .logoDiv span {
     font-size: 18px;
@@ -161,16 +161,7 @@
   }
 }
 @media screen and (min-width: 1400px) {
-  .header .logoDiv span {
-    font-size: 20px;
-  }
   .header .navbar .menu .listItem {
     margin: 0 0.8rem;
-  }
-  .header .navbar .menu .listItem a {
-    font-size: 20px;
-  }
-  .header .signUp .text {
-    font-size: 20px;
   }
 }/*# sourceMappingURL=Navbar.css.map */
