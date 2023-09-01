@@ -174,12 +174,17 @@
 
 @media screen and (min-width: 1064px) {
 	.header {
+		.logoDiv {
+			span {
+				font-size: 18px;
+			}
+		}
 		padding: 2rem 7rem;
 		.navbar {
 			.menu {
 				.listItem {
 					a {
-						font-size: 17px;
+						font-size: 18px;
 					}
 				}
 			}
@@ -194,11 +199,24 @@
 
 @media screen and (min-width: 1400px) {
 	.header {
+		.logoDiv {
+			span {
+				font-size: 20px;
+			}
+		}
 		.navbar {
 			.menu {
 				.listItem {
+					a {
+						font-size: 20px;
+					}
 					margin: 0 0.8rem;
 				}
+			}
+		}
+		.signUp {
+			.text {
+				font-size: 20px;
 			}
 		}
 	}

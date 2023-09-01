@@ -7,7 +7,7 @@ function Home() {
 	return (
 		<div className="home">
 			<div className="secContainer">
-				<div className="homeText">
+				<div className="homeText flex">
 					<span className="homeSpan">Meet The Horse Up For Bidding</span>
 					<h1 className="homeTitle">Arabian Horse</h1>
 					<div className="btns flex">
@@ -15,10 +15,9 @@ function Home() {
 						<button className="btn primaryBtn">Test Ride</button>
 					</div>
 				</div>
-
-				<div className="homeImage">
-					<img src={homeImage} alt="Home Image" />
-				</div>
+			</div>
+			<div className="homeImage">
+				<img src={homeImage} alt="Home Image" />
 			</div>
 		</div>
 	);
