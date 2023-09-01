@@ -13,6 +13,7 @@
 .home .homeImage {
   margin: auto;
   padding: 1rem;
+  max-width: 80%;
 }
 
 .secContainer {
@@ -61,9 +62,6 @@
   background: var(--whiteColor);
   color: var(--textColor);
 }
-.secContainer .homeImage {
-  margin: auto;
-}
 
 @media screen and (min-width: 520px) {
   .home .secContainer .homeText .homeSpan {
@@ -76,7 +74,7 @@
     font-size: 14px;
   }
   .home .homeImage {
-    max-width: 35%;
+    max-width: 40%;
   }
 }
 @media screen and (min-width: 770px) {
@@ -114,7 +112,7 @@
     padding: 0.7rem 2rem;
   }
   .home .homeImage {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 1240px) {

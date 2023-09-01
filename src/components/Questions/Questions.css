@@ -63,6 +63,7 @@
 .questions .secHeading h3,
 .questions .secHeading h4 {
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 .questions .secHeading p {
   font-size: var(--smallFontSize);
