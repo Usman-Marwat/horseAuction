@@ -20,9 +20,9 @@ function App() {
 			<Trending />
 			{/* <Sellers />
 			<Auction />
-			<Review />
-			<Footer /> */}
+			<Review /> */}
 			<Questions />
+			<Footer />
 		</div>
 	);
 }
