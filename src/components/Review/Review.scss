@@ -11,8 +11,10 @@
 .review {
 	.secContainer {
 		.secHeading {
-			justify-content: space-between;
+			justify-content: center;
+			gap: 2%;
 			padding: 1rem 0;
+			margin-bottom: 1.5rem;
 
 			.navBtns {
 				gap: 0.5rem;
@@ -100,8 +102,8 @@
 					}
 				}
 				&:hover {
-					box-shadow: -10px 0 7px var(--shadowColor),
-						10px 0 7px var(--shadowColor), 0 10px 7px var(--shadowColor);
+					box-shadow: -10px 0 7px rgb(222, 222, 222),
+						10px 0 7px rgb(222, 222, 222), 0 10px 7px rgb(222, 222, 222);
 					transform: translateY(-7px);
 					.imgDiv {
 						transform: scale(105%);
