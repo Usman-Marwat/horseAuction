@@ -10,16 +10,19 @@ import Search from './components/Search/Search';
 import Sellers from './components/Sellers/Sellers';
 import Trending from './components/Trending/Trending';
 import Questions from './components/Questions/Questions';
+import Middle from './components/Middle/Middle';
 
 function App() {
 	return (
 		<div>
 			<Navbar />
 			<Home />
+			<Sellers />
+
 			{/* <Search /> */}
 			<Trending />
-			{/* <Sellers />
-			<Auction /> */}
+			{/* <Auction /> */}
+			<Middle />
 			<Questions />
 			<Review />
 			<Footer />
