@@ -15,7 +15,7 @@ const reviews = [
 	{
 		reviewTitle: 'Local Bid',
 		description:
-			'Horses are majestic creatures, embodying grace and power in every stride. Watching them gallop freely across the open fields is a sight that never fails to fill my heart with wonder.',
+			'Horses are majestic creatures, embodying grace and power in every stride. Watching them gallop freely across the open fields is a sight that never fails to fill my heart',
 		rating: '4.2',
 		horseImage: reviewHorse1,
 		name: 'Ayesha',
@@ -59,21 +59,23 @@ function Review() {
 							<div className="imgDiv">
 								<img src={review.horseImage} alt="Horse Image" />
 							</div>
-							<h5 className="reviewTitle">{review.reviewTitle}</h5>
-							<span className="desc">{review.description}</span>
-							<div className="reviewerDiv flex">
-								<div className="leftDiv flex">
-									<div className="reviewerImage">
-										<img src={review.reviewerImage} alt="Reviewer Image" />
+							<div className="reviewContent">
+								<h5 className="reviewTitle">{review.reviewTitle}</h5>
+								<span className="desc">{review.description}</span>
+								<div className="reviewerDiv flex">
+									<div className="leftDiv flex">
+										<div className="reviewerImage">
+											<img src={review.reviewerImage} alt="Reviewer Image" />
+										</div>
+										<div className="aboutReviewer">
+											<span className="name">{review.name}</span>
+											<p>Bidder</p>
+										</div>
 									</div>
-									<div className="aboutReviewer">
-										<span className="name">{review.name}</span>
-										<p>Bidder</p>
+									<div className="rightDiv flex">
+										<AiFillStar className="icon" />
+										<blockquote>{review.rating}</blockquote>
 									</div>
-								</div>
-								<div className="rightDiv flex">
-									<AiFillStar className="icon" />
-									<blockquote>{review.rating}</blockquote>
 								</div>
 							</div>
 						</div>

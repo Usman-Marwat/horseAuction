@@ -1,6 +1,7 @@
 :root {
   --primaryColor: #29ab87;
   --secondaryColor: #eef7f3;
+  --shadowColor: #d3eee2;
   --textColor: #a3a3a3;
   --greyColor: #f4f4f4;
   --whiteColor: #f5f4fa;
@@ -29,6 +30,7 @@
   gap: 1.5rem;
 }
 .review .secContainer .reviewContainer .singleReview {
+  border-radius: 10px;
   transition: 0.3s ease-in-out;
 }
 .review .secContainer .reviewContainer .singleReview .imgDiv {
@@ -41,6 +43,9 @@
 .review .secContainer .reviewContainer .singleReview .imgDiv img {
   height: 100%;
   width: 100%;
+}
+.review .secContainer .reviewContainer .singleReview .reviewContent {
+  padding: 10px;
 }
 .review .secContainer .reviewContainer .singleReview .reviewTitle {
   color: var(--blackColor);
@@ -92,8 +97,57 @@
   font-size: 14px;
 }
 .review .secContainer .reviewContainer .singleReview:hover {
+  box-shadow: -10px 0 7px var(--shadowColor), 10px 0 7px var(--shadowColor), 0 10px 7px var(--shadowColor);
   transform: translateY(-7px);
 }
 .review .secContainer .reviewContainer .singleReview:hover .imgDiv {
-  border: 2px solid var(--primaryColor);
+  transform: scale(105%);
+}
+
+@media screen and (min-width: 520px) {
+  .review .secContainer .secHeading {
+    margin-top: 1rem;
+  }
+  .review .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .review .secContainer .secHeading .navBtns {
+    gap: 0.5rem;
+  }
+  .review .secContainer .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .review .secContainer .reviewContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewTitle {
+    font-size: 18px;
+  }
+  .review .secContainer .reviewContainer .singleReview .desc {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer .name {
+    font-size: 17px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer p {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv .icon {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv blockquote {
+    font-weight: 600;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .review .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .review .secContainer .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .review .secContainer .reviewContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }/*# sourceMappingURL=Review.css.map */

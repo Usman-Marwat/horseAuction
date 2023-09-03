@@ -1,6 +1,7 @@
 :root {
 	--primaryColor: #29ab87;
 	--secondaryColor: #eef7f3;
+	--shadowColor: #d3eee2;
 	--textColor: #a3a3a3;
 	--greyColor: #f4f4f4;
 	--whiteColor: #f5f4fa;
@@ -33,6 +34,7 @@
 			gap: 1.5rem;
 
 			.singleReview {
+				border-radius: 10px;
 				transition: 0.3s ease-in-out;
 				.imgDiv {
 					height: 200px;
@@ -44,6 +46,9 @@
 						height: 100%;
 						width: 100%;
 					}
+				}
+				.reviewContent {
+					padding: 10px;
 				}
 				.reviewTitle {
 					color: var(--blackColor);
@@ -95,11 +100,82 @@
 					}
 				}
 				&:hover {
+					box-shadow: -10px 0 7px var(--shadowColor),
+						10px 0 7px var(--shadowColor), 0 10px 7px var(--shadowColor);
 					transform: translateY(-7px);
 					.imgDiv {
-						border: 2px solid var(--primaryColor);
+						transform: scale(105%);
 					}
 				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.review {
+		.secContainer {
+			.secHeading {
+				margin-top: 1rem;
+				.secTitle {
+					font-size: 23px;
+				}
+				.navBtns {
+					gap: 0.5rem;
+					.icon {
+						font-size: 40px;
+					}
+				}
+			}
+			.reviewContainer {
+				grid-template-columns: repeat(2, 1fr);
+				.singleReview {
+					.reviewTitle {
+						font-size: 18px;
+					}
+					.desc {
+						font-size: 16px;
+					}
+					.reviewerDiv {
+						.leftDiv {
+							.aboutReviewer {
+								.name {
+									font-size: 17px;
+								}
+								p {
+									font-size: 16px;
+								}
+							}
+						}
+						.rightDiv {
+							.icon {
+								font-size: 16px;
+							}
+							blockquote {
+								font-weight: 600;
+								font-size: 17px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 940px) {
+	.review {
+		.secContainer {
+			.secHeading {
+				.secTitle {
+					font-size: 23px;
+				}
+				.navBtns {
+					gap: 1rem;
+				}
+			}
+			.reviewContainer {
+				grid-template-columns: repeat(3, 1fr);
 			}
 		}
 	}
