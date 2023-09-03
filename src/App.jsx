@@ -19,9 +19,9 @@ function App() {
 			{/* <Search /> */}
 			<Trending />
 			{/* <Sellers />
-			<Auction />
-			<Review /> */}
+			<Auction /> */}
 			<Questions />
+			<Review />
 			<Footer />
 		</div>
 	);
