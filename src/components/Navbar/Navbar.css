@@ -17,9 +17,13 @@
   padding: 1.5rem 2rem;
   box-shadow: 0 4px 6px rgb(237, 237, 237);
   z-index: 100;
+  background: var(--whiteColor);
 }
 .header .logoDiv .logo {
   width: 70px;
+}
+.header .logoDiv:hover {
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .header .navbar {

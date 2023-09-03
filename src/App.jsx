@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import './App.css';
 import Auction from './components/Auction/Auction';
@@ -11,21 +12,19 @@ import Sellers from './components/Sellers/Sellers';
 import Trending from './components/Trending/Trending';
 import Questions from './components/Questions/Questions';
 import Middle from './components/Middle/Middle';
+import AboutPage from './pages/AboutPage';
+import LandingPage from './pages/LandingPage';
 
 function App() {
 	return (
-		<div>
-			<Navbar />
-			<Home />
-			<Sellers />
-
-			{/* <Search /> */}
-			<Trending />
-			{/* <Auction /> */}
-			<Middle />
-			<Questions />
-			<Review />
-			<Footer />
+		<div className="app">
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Navigate to="/auction" replace />} />
+					<Route path="/auction" element={<LandingPage />} />
+					<Route path="/about" element={<AboutPage />} />
+				</Routes>
+			</BrowserRouter>
 		</div>
 	);
 }
