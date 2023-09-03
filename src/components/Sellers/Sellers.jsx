@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './Sellers.css';
+import currentAuction from '../../assets/auctionCurrent.jpg';
+import upcomingAuction from '../../assets/auctionUpcoming.jpg';
 
 function Sellers() {
 	return (
@@ -13,6 +15,27 @@ function Sellers() {
 						eum atque rem officiis debitis expedita perspiciatis culpa. Ut
 						itaque, quisquam impedit hic a corrupti modi accusantium.
 					</p>
+				</div>
+
+				<div className="sellerContainer grid">
+					<div className="singleSeller flex">
+						<div className="imgDiv flex">
+							<img src={currentAuction} />
+						</div>
+						<span className="info">
+							<h4 className="name">Current Auctions</h4>
+							<p>Starting from $40K</p>
+						</span>
+					</div>
+					<div className="singleSeller flex">
+						<div className="imgDiv flex">
+							<img src={upcomingAuction} />
+						</div>
+						<span className="info">
+							<h4 className="name">Upcoming Auctions</h4>
+							<p>Starting from $70K</p>
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
