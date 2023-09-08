@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { PiDotsNineBold } from 'react-icons/pi';
 
-import logo from '../../assets/logo.jpg';
-
 import './Navbar.css';
+import logo from '../../assets/logo.jpg';
 
 function Navbar() {
 	const [navbar, setNavbar] = useState('navbar');
@@ -19,22 +17,29 @@ function Navbar() {
 	const addBg = () => {
 		if (window.screenY >= 20) setHeader('header addBg');
 	};
+
 	window.addEventListener('scroll', addBg);
 
 	return (
 		<div className={header}>
-			<div className="logoDiv flex" onClick={() => navigate('/')}>
-				<img src={logo} alt="logo img" className="logo" />
-				<span>Horse Auction</span>
-			</div>
+			<Link to={'/'}>
+				<div className="logoDiv flex">
+					<img src={logo} alt="logo img" className="logo" />
+					<span>Horse Auction</span>
+				</div>
+			</Link>
 
 			<div className={navbar}>
-				<ul className="menu" onClick={() => navigate(`/about`)}>
+				<ul className="menu">
 					<li className="listItem" onClick={removeNavbar}>
-						<a className="link">About Us</a>
+						<Link className="link" to="/about">
+							About Us
+						</Link>
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
-						<a className="link">Racing</a>
+						<Link className="link" to="/blog">
+							Blog
+						</Link>
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
 						<a className="link">Auctions</a>

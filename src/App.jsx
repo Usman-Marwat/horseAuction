@@ -14,6 +14,7 @@ import Questions from './components/Questions/Questions';
 import Middle from './components/Middle/Middle';
 import AboutPage from './pages/AboutPage';
 import LandingPage from './pages/LandingPage';
+import BlogPage from './pages/BlogPage';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 					<Route path="/" element={<Navigate to="/auction" replace />} />
 					<Route path="/auction" element={<LandingPage />} />
 					<Route path="/about" element={<AboutPage />} />
+					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

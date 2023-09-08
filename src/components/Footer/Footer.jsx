@@ -58,7 +58,7 @@ function Footer() {
 				<div className="footerLinks">
 					<span className="linkTitle">Contact Details</span>
 					<span className="phone">+651 125 658</span>
-					<span className="email">rajrose@outlook.com</span>
+					<span className="email">horsebidding@outlook.com</span>
 				</div>
 			</div>
 		</div>

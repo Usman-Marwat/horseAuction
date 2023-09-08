@@ -22,6 +22,9 @@
 .header .logoDiv .logo {
   width: 70px;
 }
+.header .logoDiv span {
+  color: #434344;
+}
 .header .logoDiv:hover {
   cursor: pointer;
 }

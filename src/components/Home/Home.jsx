@@ -3,8 +3,9 @@ import React from 'react';
 import './Home.css';
 import homeImage from '../../assets/homeImage.png';
 import aboutHorse from '../../assets/aboutHorse.png';
+import blogHorse from '../../assets/blogHorse.png';
 
-function Home({ about }) {
+function Home({ about, blog }) {
 	return (
 		<div className="home">
 			<div className="secContainer">
@@ -18,7 +19,10 @@ function Home({ about }) {
 				</div>
 			</div>
 			<div className="homeImage">
-				<img src={about ? aboutHorse : homeImage} alt="Home Image" />
+				<img
+					src={about ? aboutHorse : blog ? blogHorse : homeImage}
+					alt="Home Image"
+				/>
 			</div>
 		</div>
 	);
