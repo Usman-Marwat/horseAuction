@@ -4,8 +4,20 @@ import './Home.css';
 import homeImage from '../../assets/homeImage.png';
 import aboutHorse from '../../assets/aboutHorse.png';
 import blogHorse from '../../assets/blogHorse.png';
+import productHorse from '../../assets/productsHorse.png';
+import contactHorse from '../../assets/contactHorse.png';
 
-function Home({ about, blog }) {
+function Home({ about, blog, product, contact }) {
+	const image = about
+		? aboutHorse
+		: blog
+		? blogHorse
+		: contact
+		? contactHorse
+		: product
+		? productHorse
+		: homeImage;
+
 	return (
 		<div className="home">
 			<div className="secContainer">
@@ -19,10 +31,7 @@ function Home({ about, blog }) {
 				</div>
 			</div>
 			<div className="homeImage">
-				<img
-					src={about ? aboutHorse : blog ? blogHorse : homeImage}
-					alt="Home Image"
-				/>
+				<img src={image} alt="Home Image" />
 			</div>
 		</div>
 	);

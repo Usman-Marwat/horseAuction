@@ -1,115 +1,103 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&family=Titillium+Web:wght@200;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&family=Titillium+Web:wght@200;400;600;700&display=swap');
+
 :root {
-  --primaryColor: #29ab87;
-  --secondaryColor: #eef7f3;
-  --textColor: #a3a3a3;
-  --greyColor: #f4f4f4;
-  --whiteColor: #f5f4fa;
-  --blackColor: #434344;
-  --bgColor: hsl(0, 0%, 100%);
-  --formColor: hsl(20, 42%, 87%);
-  --greyText: hsl(0, 0%, 51%);
-  --inputColor: hsl(330, 12%, 97%);
-  --cardColor: hsl(300, 3%, 94%);
-  --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.6rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: 0.938rem;
-  --smallFontSize: 0.813rem;
-  --smallestFontSize: 0.75rem;
-  --borderRadius: 3rem;
+	--primaryColor: #29ab87;
+	--secondaryColor: #eef7f3;
+	--textColor: #a3a3a3;
+	--greyColor: #f4f4f4;
+	--whiteColor: #f5f4fa;
+	--blackColor: #434344;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  transition: 0.2s ease-in-out;
-  font-family: "Titillium Web", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: 0.2s ease-in-out;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 p {
-  color: var(--textColor);
-  line-height: 1.4rem;
+	color: var(--textColor);
+	line-height: 1.4rem;
 }
 
 .flex {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .grid {
-  display: grid;
-  align-items: center;
+	display: grid;
+	align-items: center;
 }
 
 .btn {
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
 }
 
 .primaryBtn {
-  background: var(--primaryColor);
-  padding: 10px 15px;
-  border-radius: 3px;
-  font-weight: 600;
-  color: var(--whiteColor);
-  font-size: 12px;
+	background: var(--primaryColor);
+	padding: 10px 15px;
+	border-radius: 3px;
+	font-weight: 600;
+	color: var(--whiteColor);
+	font-size: 12px;
 }
 .primaryBtn:hover {
-  background: var(--secondaryColor);
-  color: var(--blackColor);
+	background: var(--secondaryColor);
+	color: var(--blackColor);
 }
 
 .container {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 .section {
-  padding: 4rem 0 2rem;
+	padding: 4rem 0 2rem;
 }
 
 img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+	width: 100%;
+	height: auto;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
 
 .icon {
-  font-size: 25px;
-  cursor: pointer;
+	font-size: 25px;
+	cursor: pointer;
 }
 
 .secTitle {
-  color: var(--blackColor);
-  font-size: 20px;
+	color: var(--blackColor);
+	font-size: 20px;
 }
 
 @media screen and (min-width: 940px) {
-  .section {
-    padding: 6rem 0 4 rem;
-  }
-  .container {
-    width: 90%;
-    margin: auto;
-  }
+	.section {
+		padding: 6rem 0 4 rem;
+	}
+	.container {
+		width: 90%;
+		margin: auto;
+	}
 }
 @media screen and (min-width: 1024px) {
-  .container {
-    width: 75%;
-  }
-}/*# sourceMappingURL=App.css.map */
+	.container {
+		width: 75%;
+	}
+} /*# sourceMappingURL=App.css.map */

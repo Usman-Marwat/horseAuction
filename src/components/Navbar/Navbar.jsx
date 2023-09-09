@@ -42,13 +42,17 @@ function Navbar() {
 						</Link>
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
-						<a className="link">Auctions</a>
+						<Link className="link" to="/products">
+							Products
+						</Link>
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
 						<a className="link">Merchant</a>
 					</li>
 					<li className="listItem" onClick={removeNavbar}>
-						<a className="link">GSB</a>
+						<Link className="link" to="/contact">
+							Contact
+						</Link>
 					</li>
 				</ul>
 				<AiFillCloseCircle className="icon closeIcon" onClick={removeNavbar} />
