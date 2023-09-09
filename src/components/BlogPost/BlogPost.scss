@@ -1,9 +1,9 @@
 .blogPost {
 	.secContainer {
-		.reviewContainer {
+		.blogContainer {
 			gap: 1.5rem;
 
-			.singleReview {
+			.singleBlog {
 				border-radius: 10px;
 				transition: 0.3s ease-in-out;
 				.imgDiv {
@@ -17,7 +17,7 @@
 						width: 100%;
 					}
 				}
-				.reviewContent {
+				.blogContent {
 					padding: 5px;
 				}
 				.date {
@@ -27,15 +27,17 @@
 				.seeMore {
 					color: black;
 				}
-				.reviewTitle {
+				.blogTitle {
 					color: var(--blackColor);
 					font-size: 20px;
 					padding-top: 10px;
+					text-align: left;
 				}
 				.desc {
 					color: var(--blackColor);
 					opacity: 0.7;
 					font-size: 14px;
+					text-align: left;
 				}
 				.reviewerDiv {
 					justify-content: space-between;
@@ -90,35 +92,14 @@
 @media screen and (min-width: 520px) {
 	.blogPost {
 		.secContainer {
-			.reviewContainer {
+			.blogContainer {
 				grid-template-columns: repeat(2, 1fr);
-				.singleReview {
-					.reviewTitle {
+				.singleBlog {
+					.blogTitle {
 						font-size: 18px;
 					}
 					.desc {
 						font-size: 16px;
-					}
-					.reviewerDiv {
-						.leftDiv {
-							.aboutReviewer {
-								.name {
-									font-size: 17px;
-								}
-								p {
-									font-size: 16px;
-								}
-							}
-						}
-						.rightDiv {
-							.icon {
-								font-size: 16px;
-							}
-							blockquote {
-								font-weight: 600;
-								font-size: 17px;
-							}
-						}
 					}
 				}
 			}
@@ -129,7 +110,7 @@
 @media screen and (min-width: 940px) {
 	.blogPost {
 		.secContainer {
-			.reviewContainer {
+			.blogContainer {
 				grid-template-columns: repeat(3, 1fr);
 			}
 		}
